@@ -5,10 +5,10 @@ module.exports = override(
         // libraryDirectory: 'es',
         style: 'css'
     }),
-    addLessLoader({        
-        javascriptEnabled: true,        
-        modifyVars: { 
-            '@primary-color': '#1DA57A' 
-        }    
-    })
+    addLessLoader({
+        lessOptions: {
+          javascriptEnabled: true,
+          modifyVars: { '@primary-color': '#1DA57A' },
+        },
+    }),
 );
