@@ -1,6 +1,7 @@
 import React from 'react';
 import BasicRouter from './router'
 import { BrowserRouter as Router, Link } from "react-router-dom";
+import Tabs from '@/components/Tabs'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
           <Link to="/wechat">wechat</Link>
         </div>
         <BasicRouter/>
+        <Tabs></Tabs>
       </Router>
     </div>
   );
