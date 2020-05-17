@@ -10,6 +10,7 @@ export default function (props: Props) {
                 <i className="iconfont icon-sousuo"></i>
                 <span>妃优肤烟酰胺面膜</span>
             </p>
+            <i className="iconfont icon-peixun right-icon"></i>
         </div>
     )
 }
