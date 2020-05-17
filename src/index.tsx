@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import '@/assets/style/common.less'
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
