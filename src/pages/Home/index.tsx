@@ -1,13 +1,15 @@
 import React from 'react';
-import { Carousel, WingBlank } from 'antd-mobile';
+import { Carousel } from 'antd-mobile';
 import SearchInput from '@/components/SearchInput'
+import ProductList from '@/components/ProductList'
+import TypeSession from './TypeSession'
 import './index.less'
 
 export interface Props {
     name: string;
 }
 
-const Home = function () {
+const Home = function (props: Props) {
     const imgArr = [
         'https://image.sudian178.com/sd/themeImg/23563959242835813.jpg',
         'https://image.sudian178.com/sd/themeImg/23272799654634282.jpg',
@@ -40,6 +42,8 @@ const Home = function () {
                     ))}
                 </Carousel>
             </div>
+            <TypeSession></TypeSession>
+            <ProductList></ProductList>
         </div>
     );
 }
