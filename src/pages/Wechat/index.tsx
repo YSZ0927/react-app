@@ -11,7 +11,7 @@ class Wechat extends React.Component<Props, object>{
     render() {
         return (
             <div className="hello">
-                <Button type="primary">sdfasd</Button>
+                <Button type="primary">sdfasasfd</Button>
             </div>
           );
     }
