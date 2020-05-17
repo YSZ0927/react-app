@@ -1,13 +1,21 @@
 import React from 'react'
 import {Route} from "react-router-dom";
-import Wechat from '../pages/Wechat'
-import Home from '../pages/Home'
+import FindCircle from '@/pages/FindCircle'
+import Home from '@/pages/Home'
+import ShopCar from '@/pages/ShopCar'
+import Mine from '@/pages/Mine'
+import Tabs from '@/components/Tabs'
 
 
 const BasicRouter = () => (
     <>
-        <Route path="/home" component={Home}/>
-        <Route path="/wechat" component={Wechat}/>
+        <main>
+            <Route path="/" component={Home}/>
+            <Route path="/find-circle" component={FindCircle}/>
+            <Route path="/shop-car" component={ShopCar}/>
+            <Route path="/mine" component={Mine}/>
+        </main>
+        <Tabs></Tabs>
     </>
 );
 
