@@ -10,10 +10,10 @@ import Tabs from '@/components/Tabs'
 const BasicRouter = () => (
     <>
         <main>
-            <Route path="/" component={Home}/>
-            <Route path="/find-circle" component={FindCircle}/>
-            <Route path="/shop-car" component={ShopCar}/>
-            <Route path="/mine" component={Mine}/>
+            <Route path="/" exact component={Home}/>
+            <Route path="/find-circle" exact component={FindCircle}/>
+            <Route path="/shop-car" exact component={ShopCar}/>
+            <Route path="/mine" exact component={Mine}/>
         </main>
         <Tabs></Tabs>
     </>

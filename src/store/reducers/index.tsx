@@ -12,7 +12,8 @@ let reducers: ReducersMapObject<RootState, AnyAction> = {
     home,
     mine,
     shop,
-    router: connectRouter(history)
+    // @ts-ignore
+    router: connectRouter(history)  // https://github.com/supasate/connected-react-router/issues/195
 }
 const rootReducer: Reducer<RootState, AnyAction> = combineReducers<RootState, AnyAction>(reducers)
 
