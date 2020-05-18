@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Carousel } from 'antd-mobile';
 import SearchInput from '@/components/SearchInput'
 import ProductList from '@/components/ProductList'
@@ -22,13 +22,13 @@ const Home = function (props: Props) {
         'rgb(255, 80, 108)',
         'rgb(255, 172, 77)'
     ]
-    let color = colorArr[0]
+    let [bannerColor, setBannerColor] = useState(colorArr[0])
     const changeBanner = (val) => {
-        color = colorArr[val]
+        setBannerColor(colorArr[val])
     }
     return (
         <div className="home">
-            <div className="home-banner" style={{background: color}}>
+            <div className="home-banner" style={{background: bannerColor}}>
                 <SearchInput></SearchInput>
                 <Carousel
                     autoplay={true}
