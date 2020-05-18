@@ -1,15 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, PropsWithChildren } from 'react';
 import { Carousel } from 'antd-mobile';
+
+import { connect } from 'react-redux'
+import { RouterComponentProps } from 'react-router-dom'
 import SearchInput from '@/components/SearchInput'
 import ProductList from '@/components/ProductList'
-import TypeSession from './TypeSession'
+import TypeSession from './components/TypeSession'
+import mapDispatchToProps from '@/store/actions/home'
 import './index.less'
 
-export interface Props {
-    name: string;
-}
+type Props = PropsWithChildren<RouterComponentProps & ReturnType<typeof mapStateToProps> & typeof mapDispatchToProps>;
 
-const Home = function (props: Props) {
+function Home (props: Props) {
     const imgArr = [
         'https://image.sudian178.com/sd/themeImg/23563959242835813.jpg',
         'https://image.sudian178.com/sd/themeImg/23272799654634282.jpg',
@@ -42,10 +44,17 @@ const Home = function (props: Props) {
                     ))}
                 </Carousel>
             </div>
-            <TypeSession></TypeSession>
+            <TypeSession
+                sessionList={props.typrSessionList}
+                getTypeSessions={props.getTypeSessions}>
+            </TypeSession>
             <ProductList></ProductList>
         </div>
     );
 }
 
-export default Home;
+const mapStateToProps = (state) => state.home
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(Home);
