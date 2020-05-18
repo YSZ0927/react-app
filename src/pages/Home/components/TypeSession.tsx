@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { PropsWithChildren, useEffect } from 'react'
 import { WingBlank } from 'antd-mobile';
 import './TypeSession.less'
+// import { getTypeSessions } from '@/store/actions/home'
 
-export default function () {
+type Props = PropsWithChildren<{
+    sessionList: []
+    getTypeSessions: () => void
+}>
+export default function (props: Props) {
     const sessionArr = [
         {
             url: 'https://image.sudian178.com/sd/linkDataImg/23361024363310986.png',
@@ -62,12 +67,18 @@ export default function () {
             title: '母婴儿童'
         },
     ]
+    useEffect(() => {
+        if (props.sessionList.length === 0) {
+            props.getTypeSessions()
+        }
+    })
+    // getTypeSessions
     return (
         <WingBlank className="type-session">
             {
                 sessionArr.map(val => (
-                    <dl>
-                        <dt><img src={val.url} key={val.url} alt=""/></dt>
+                    <dl key={val.url}>
+                        <dt><img src={val.url}  alt=""/></dt>
                         <dd>{val.title}</dd>
                     </dl>
                 ))

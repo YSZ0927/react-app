@@ -5,6 +5,8 @@ import { ConnectedRouter } from 'connected-react-router'
 import { createBrowserHistory } from 'history'
 import store from './store'
 import BasicRouter from './router'
+// import 'moment/locale/zh-cn';
+// import 'antd/dist/antd.css';
 
 
 function App() {
