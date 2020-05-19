@@ -59,3 +59,12 @@ export function getTypeSessionsApi () {
         },
     ]
 }
+
+export function getBannerApi () {
+    return [
+        'https://image.sudian178.com/sd/themeImg/23563959242835813.jpg',
+        'https://image.sudian178.com/sd/themeImg/23272799654634282.jpg',
+        'https://image.sudian178.com/sd/themeImg/23216808188207786.jpg',
+        'https://image.sudian178.com/sd/themeImg/23561250090602203.jpg'
+    ]
+}

@@ -5,7 +5,7 @@ import Home from '@/pages/Home'
 import ShopCar from '@/pages/ShopCar'
 import Mine from '@/pages/Mine'
 import Tabs from '@/components/Tabs'
-
+import './index.less'
 
 const BasicRouter = () => (
     <>

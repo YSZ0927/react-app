@@ -1,10 +1,16 @@
-import { GET_TYPE_SESSION } from '@/store/action-types'
-import { getTypeSessionsApi } from '@/apis/home'
+import * as actionTypes from '@/store/action-types'
+import { getTypeSessionsApi, getBannerApi } from '@/apis/home'
 
 export default {
+    getBanner() {
+        return {
+            type: actionTypes.GET_BANNER,
+            payload: getBannerApi()
+        }
+    },
     getTypeSessions() {
         return {
-            type: GET_TYPE_SESSION,
+            type: actionTypes.GET_TYPE_SESSION,
             payload: getTypeSessionsApi()
         }
     }

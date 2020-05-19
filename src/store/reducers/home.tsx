@@ -1,19 +1,17 @@
 import { AnyAction } from 'redux'
 import * as actionTypes from '@/store/action-types'
-
-export interface HomeState {}
+import { HomeState } from '@/typings'
 
 const initState: HomeState = {
-    typrSessionList: []
-    // goods: {
-    //     loading: false,
-    //     goodsList: []
-    // }
+    sessionList: [],
+    bannerList: []
 }
 export default function (state: HomeState = initState, action: AnyAction): HomeState {
     switch(action.type) {
         case actionTypes.GET_TYPE_SESSION:
-            return {...state, typrSessionList: action.payload}
+            return {...state, sessionList: action.payload}
+        case actionTypes.GET_BANNER:
+            return {...state, bannerList: action.payload}
     }
     return state
 }
