@@ -1,6 +1,6 @@
 import React from 'react';
 import { Provider } from 'react-redux'
-import { BrowserRouter as Router } from "react-router-dom";
+// import { BrowserRouter as Router } from "react-router-dom";
 import { ConnectedRouter } from 'connected-react-router'
 import { createBrowserHistory } from 'history'
 import store from './store'

@@ -5,7 +5,13 @@ export interface HomeGoodsList {
     list: GoodsList,
     hasNextPage: boolean
 }
+export interface TypeSession {
+    url: string,
+    title: string
+}
 
 export interface HomeState {
     // goods: HomeGoodsList
+    bannerList: String[],
+    sessionList: TypeSession[]
 }

@@ -1,4 +1,4 @@
-const { override, fixBabelImports, addLessLoader, addWebpackAlias } = require('customize-cra');
+const { override, fixBabelImports, addLessLoader, addWebpackAlias, addPostcssPlugins } = require('customize-cra');
 const path = require('path')
 
 module.exports = override(
@@ -16,4 +16,12 @@ module.exports = override(
     addWebpackAlias({ //路径别名
         ['@']: path.resolve(__dirname, './src'),
     }),
+    // addPostcssPlugins([
+    //     require('postcss-pxtorem')({
+    //         rootValue: 75,
+    //         propList: ['*'],
+    //         minPixelValue: 2,
+    //         // selectorBlackList: ['am-']
+    //     })
+    // ]),
 );
