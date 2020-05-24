@@ -1,10 +1,11 @@
 export interface Goods {
-    goodsName: String,
-    goodsId: String,
-    goodsImage: String,
-    goodsPrice: Number,
+    goodsName: string,
+    goodsId: string,
+    goodsImage: string,
+    appPrice: number,
+    imgUrl: string,
 }
 export interface GoodsList {
-    success: boolean,
-    data: Goods[]
+    isLastPage: boolean,
+    list: Goods[]
 }

@@ -10,7 +10,7 @@ class Wechat extends React.Component<Props, object>{
     }
     render() {
         return (
-            <div className="hello">
+            <div className="mine">
                Mine
             </div>
           );

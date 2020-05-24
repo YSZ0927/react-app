@@ -1,5 +1,5 @@
 import * as actionTypes from '@/store/action-types'
-import { getTypeSessionsApi, getBannerApi } from '@/apis/home'
+import { getTypeSessionsApi, getBannerApi, getGoodsListApi } from '@/apis/home'
 
 export default {
     getBanner() {
@@ -12,6 +12,12 @@ export default {
         return {
             type: actionTypes.GET_TYPE_SESSION,
             payload: getTypeSessionsApi()
+        }
+    },
+    getGoodsList() {
+        return {
+            type: actionTypes.GET_GOODS_LIST,
+            payload: getGoodsListApi()
         }
     }
 }
