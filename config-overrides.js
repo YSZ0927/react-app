@@ -16,12 +16,11 @@ module.exports = override(
     addWebpackAlias({ //路径别名
         ['@']: path.resolve(__dirname, './src'),
     }),
-    // addPostcssPlugins([
-    //     require('postcss-pxtorem')({
-    //         rootValue: 75,
-    //         propList: ['*'],
-    //         minPixelValue: 2,
-    //         // selectorBlackList: ['am-']
-    //     })
-    // ]),
+    addPostcssPlugins([
+        require('postcss-pxtorem')({
+            rootValue: 75,
+            propList: ['*'],
+            minPixelValue: 2,
+        })
+    ]),
 );

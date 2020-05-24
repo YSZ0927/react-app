@@ -6,6 +6,7 @@ import mapDispatchToProps from '@/store/actions/home'
 import { HomeState, RootState } from '@/typings'
 import TypeSession from './components/TypeSession'
 import BannerSlider from './components/BannerSlider'
+import ActiveArea from './components/ActiveArea'
 import './index.less'
 
 type Props = PropsWithChildren<RouterComponentProps & ReturnType<typeof mapStateToProps> & typeof mapDispatchToProps>;
@@ -21,7 +22,12 @@ function Home (props: Props) {
                 sessionList={props.sessionList}
                 getTypeSessions={props.getTypeSessions}>
             </TypeSession>
-            <ProductList></ProductList>
+            <ProductList
+                goodsList={props.goodsList}
+                getGoodsList={props.getGoodsList}>
+            </ProductList>
+            <ActiveArea sessionList={props.sessionList}
+                getTypeSessions={props.getTypeSessions}>></ActiveArea>
         </div>
     );
 }

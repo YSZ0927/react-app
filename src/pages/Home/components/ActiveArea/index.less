@@ -1,0 +1,16 @@
+.active-box{
+    margin-top: 20px;
+    &>div{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        img{
+            width: 100%;
+        }
+        &>img:nth-child(1){
+            grid-column: ~"1 / 3";
+            grid-row: 1;
+        }
+    }
+    
+}

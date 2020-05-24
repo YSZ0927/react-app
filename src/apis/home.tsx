@@ -68,3 +68,64 @@ export function getBannerApi () {
         'https://image.sudian178.com/sd/themeImg/23561250090602203.jpg'
     ]
 }
+
+export function getGoodsListApi() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve({
+                isLastPage: false,
+                list: [
+                    {
+                        appPrice: 29.9,
+                        brandName: "THE SAEM/得鲜",
+                        countryBrandName: "韩国品牌",
+                        countryIcon: "https://image.sudian178.com/sd/goodsCountryImg/8607370908661994.png",
+                        description: "补水保湿",
+                        goodsId: "258123870107992",
+                        goodsName: "THE SAEM/得鲜 济州岛鲜鲜芦荟胶 300ML",
+                        goodAction: 0,
+                        imgUrl: "https://image.sudian178.com/sd/middleImg/20190708181440288.jpg",
+                        marketPrice: 59,
+                    },
+                    {
+                        appPrice: 29.9,
+                        brandName: "ESTEE LAUDER/雅诗兰黛",
+                        countryBrandName: "韩国品牌",
+                        countryIcon: "https://image.sudian178.com/sd/goodsCountryImg/8607370908661994.png",
+                        description: "补水保湿",
+                        goodsId: "258123870107992",
+                        goodsName: "ESTEE LAUDER/雅诗兰黛 小棕瓶抗蓝光眼霜 15ML",
+                        goodAction: 1,
+                        imgUrl: "https://image.sudian178.com/sd/goodsImg/23374642490973621.jpg",
+                        marketPrice: 59,
+                    },
+                    {
+                        appPrice: 29.9,
+                        brandName: "超级玛丽",
+                        countryBrandName: "韩国品牌",
+                        countryIcon: "https://image.sudian178.com/sd/goodsCountryImg/8607370908661994.png",
+                        description: "补水保湿",
+                        goodsId: "258123870107992",
+                        goodsName: "【多规格】超级玛丽 广西北海红树林红心流油海鸭蛋真空包装 20枚",
+                        goodAction: 3,
+                        imgUrl: "https://image.sudian178.com/sd/goodsRealImg/20191105104721394824.jpg",
+                        marketPrice: 59,
+                    },
+                    {
+                        appPrice: 29.9,
+                        brandName: "金雅涵",
+                        countryBrandName: "韩国品牌",
+                        countryIcon: "https://image.sudian178.com/sd/goodsCountryImg/8607370908661994.png",
+                        description: "补水保湿",
+                        goodsId: "258123870107992",
+                        goodsName: "金雅涵  超声波万能驱蚊器家用室内多功能智能电子驱虫苍蝇老鼠灭蚊器神器",
+                        goodAction: 2,
+                        imgUrl: "https://image.sudian178.com/sd/middleImg/20190605103643000.jpg",
+                        marketPrice: 59,
+                    }
+                ]
+            }) 
+        },100)
+    })
+    
+}
