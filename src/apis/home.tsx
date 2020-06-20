@@ -1,60 +1,71 @@
+import session1 from '../assets/images/session1.png'
+import session2 from '../assets/images/session2.png'
+import session3 from '../assets/images/session3.png'
+import session4 from '../assets/images/session4.png'
+import session5 from '../assets/images/session5.png'
+import session6 from '../assets/images/session6.png'
+import session7 from '../assets/images/session7.png'
+import session8 from '../assets/images/session8.png'
+import session9 from '../assets/images/session9.png'
+import session10 from '../assets/images/session10.png'
+import session11 from '../assets/images/session11.png'
+import session12 from '../assets/images/session12.png'
 export function getTypeSessionsApi () {
     return [
         {
-            url: 'https://image.sudian178.com/sd/linkDataImg/23361024363310986.png',
+            url: session1,
             title: '内购会'
         },
         {
-            url: 'https://image.sudian178.com/sd/linkDataImg/23360930389063061.png',
+            url: session2,
             title: '国际馆'
         },
         {
-            url: 'https://image.sudian178.com/sd/linkDataImg/23904556792133230.png',
+            url: session3,
             title: '每日上新'
         },
         {
-            url: 'https://image.sudian178.com/sd/linkDataImg/23360815090542198.png',
-
+            url: session4,
             title: '服饰箱包'
         },
         {
-            url: 'https://image.sudian178.com/sd/linkDataImg/23360439484563961.png',
+            url: session5,
             title: '环球美食'
         },
         {
-            url: 'https://image.sudian178.com/sd/linkDataImg/23360826072722145.png',
+            url: session6,
             title: '个人护理'
         },
         {
-            url: 'https://image.sudian178.com/sd/linkDataImg/22520808698990043.png',
+            url: session7,
             title: '数码家电'
         },
         {
-            url: 'https://image.sudian178.com/sd/linkDataImg/23361426128292862.png',
+            url: session8,
             title: '国际轻奢'
         },
         {
-            url: 'https://image.sudian178.com/sd/linkDataImg/23902488259884341.png',
+            url: session9,
             title: '我的专柜'
         },
         {
-            url: 'https://image.sudian178.com/sd/linkDataImg/23360974672549351.png',
+            url: session10,
             title: '商旅'
         },
         {
-            url: 'https://image.sudian178.com/sd/linkDataImg/23361395525286885.png',
+            url: session11,
             title: '今日清仓'
         },
         {
-            url: 'https://image.sudian178.com/sd/linkDataImg/23360432755853149.png',
+            url: session12,
             title: '美妆护肤'
         },
         {
-            url: 'https://image.sudian178.com/sd/linkDataImg/23361279887702594.png',
+            url: session4,
             title: '居家百货'
         },
         {
-            url: 'https://image.sudian178.com/sd/linkDataImg/23361410841820580.png',
+            url: session5,
             title: '母婴儿童'
         },
     ]
@@ -62,10 +73,10 @@ export function getTypeSessionsApi () {
 
 export function getBannerApi () {
     return [
-        'https://image.sudian178.com/sd/themeImg/23563959242835813.jpg',
-        'https://image.sudian178.com/sd/themeImg/23272799654634282.jpg',
-        'https://image.sudian178.com/sd/themeImg/23216808188207786.jpg',
-        'https://image.sudian178.com/sd/themeImg/23561250090602203.jpg'
+        'http://mpic.tiankong.com/930/854/93085409058bd7eb20a44fecd38c95ed/640.jpg@!240h',
+        'http://pic.qjimage.com/ph117/high/ph7664-p00279.jpg',
+        'http://mpic.tiankong.com/2a5/717/2a5717b2ef6bc5100ac48c309ba0ee03/640.jpg@!240h',
+        'http://mpic.tiankong.com/91c/b21/91cb21c4adaa51447ce91f30fe3f4824/640.jpg@!240h'
     ]
 }
 

@@ -27,7 +27,7 @@ function Home (props: Props) {
                 getGoodsList={props.getGoodsList}>
             </ProductList>
             <ActiveArea sessionList={props.sessionList}
-                getTypeSessions={props.getTypeSessions}>></ActiveArea>
+                getTypeSessions={props.getTypeSessions}></ActiveArea>
         </div>
     );
 }

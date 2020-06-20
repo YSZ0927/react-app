@@ -29,12 +29,13 @@ export default function (props: Props) {
             <Carousel
                 autoplay={true}
                 afterChange={changeBanner}
+                className="home-banner-box"
                 infinite>
                 {props.bannerList.map(val => (
                     <img src={val}
                         key={val}
-                        alt=""
-                        style={{ width: '100%', verticalAlign: 'top', borderRadius: '6px' }}/>
+                        className="home-banner-img"
+                        alt=""/>
                 ))}
             </Carousel>
         </div>

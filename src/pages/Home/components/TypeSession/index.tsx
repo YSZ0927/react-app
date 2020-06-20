@@ -1,5 +1,4 @@
 import React, { PropsWithChildren, useEffect } from 'react'
-import { WingBlank } from 'antd-mobile';
 import './index.less'
 import { TypeSession } from '@/typings'
 
@@ -13,16 +12,22 @@ export default function (props: Props) {
             props.getTypeSessions()
         }
     })
+    
+    // this.$refs.typeSession
+
+    // const listenScroll = () => {
+
+    // }ref="typeSession"
     return (
-        <WingBlank className="type-session">
+        <div className="type-session" >
             {
                 props.sessionList.map(val => (
-                    <dl key={val.url}>
+                    <dl key={val.title}>
                         <dt><img src={val.url}  alt=""/></dt>
                         <dd>{val.title}</dd>
                     </dl>
                 ))
             }
-        </WingBlank>
+        </div>
     )
 }
