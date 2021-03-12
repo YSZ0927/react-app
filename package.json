@@ -56,6 +56,6 @@
     "less": "^3.11.1",
     "less-loader": "5.0.0",
     "react-app-rewired": "^2.1.6",
-    "react-dev-utils": "^10.2.1"
+    "react-dev-utils": "^11.0.4"
   }
 }
